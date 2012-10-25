@@ -1,0 +1,21 @@
+My\RssBundle\Entity\Source:
+    type: entity
+    table: null
+    repositoryClass: My\RssBundle\Entity\SourceRepository
+    fields:
+      
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+                
+        name:
+            type: string
+            length: 100
+        url:
+            type: string
+            length: 100      
+    lifecycleCallbacks: {  }
+    
+    

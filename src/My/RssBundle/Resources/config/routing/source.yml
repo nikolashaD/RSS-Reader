@@ -1,0 +1,30 @@
+admin:
+    pattern:  /
+    defaults: { _controller: "MyRssBundle:Source:index" }
+
+admin_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "MyRssBundle:Source:show" }
+
+admin_new:
+    pattern:  /new
+    defaults: { _controller: "MyRssBundle:Source:new" }
+
+admin_create:
+    pattern:  /create
+    defaults: { _controller: "MyRssBundle:Source:create" }
+    requirements: { _method: post }
+
+admin_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "MyRssBundle:Source:edit" }
+
+admin_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "MyRssBundle:Source:update" }
+    requirements: { _method: post }
+
+admin_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "MyRssBundle:Source:delete" }
+    requirements: { _method: post }

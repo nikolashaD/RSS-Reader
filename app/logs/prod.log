@@ -1,0 +1,1 @@
+[2012-10-25 08:54:28] request.ERROR: Symfony\Component\HttpKernel\Exception\NotFoundHttpException: No route found for "GET /rss/" (uncaught exception) at D:\server\www\RSS-Reader\app\cache\prod\classes.php line 5156 [] []

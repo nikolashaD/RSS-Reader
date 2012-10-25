@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: 'D:/server/www/RSS-Reader/app/config/routing_dev.yml'

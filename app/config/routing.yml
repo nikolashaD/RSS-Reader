@@ -1,0 +1,46 @@
+my_rss:
+    resource: "@MyRssBundle/Resources/config/routing.yml"
+    prefix:   /admin
+    
+rss:
+    pattern:  /rss/
+    defaults: { _controller: MyRssBundle:Rss:index }
+    
+admin:
+    pattern:  /source/
+    prefix: /admin
+    defaults: { _controller: MyRssBundle:Source:index }
+admin_edit:
+    pattern:  /source/edit/{id}
+    prefix: /admin
+    defaults: { _controller: MyRssBundle:Source:edit }
+   
+admin_new:    
+    pattern:  /source/new
+    prefix: /admin
+    defaults: { _controller: MyRssBundle:Source:new }
+    
+admin_show:    
+    pattern:  /source/show/{id}
+    prefix: /admin
+    defaults: { _controller: MyRssBundle:Source:show }
+    
+admin_create:    
+    pattern:  /source/create
+    prefix: /admin
+    defaults: { _controller: MyRssBundle:Source:create }
+    
+admin_delete:    
+    pattern:  /source/delete/id
+    prefix: /admin
+    defaults: { _controller: MyRssBundle:Source:delete }
+
+
+admin_update:    
+    pattern:  /source/update/{id}
+    prefix: /admin
+    defaults: { _controller: MyRssBundle:Source:update }
+# Internal routing configuration to handle ESI
+#_internal:
+#    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#    prefix:   /_internal
